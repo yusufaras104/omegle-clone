@@ -8,7 +8,11 @@ body {
     background-color: #f0f0f0;
 }
 
-#chat-container {
+.hidden {
+    display: none;
+}
+
+#login-container, #chat-container {
     width: 300px;
     background: white;
     border-radius: 8px;
@@ -16,6 +20,8 @@ body {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #chat-box {
@@ -37,15 +43,16 @@ body {
     box-sizing: border-box;
 }
 
-#send-button {
+#send-button, #login-button {
     padding: 10px;
     border: none;
     background: #007bff;
     color: white;
     cursor: pointer;
     flex: 0;
+    margin-top: 10px;
 }
 
-#send-button:hover {
+#send-button:hover, #login-button:hover {
     background: #0056b3;
 }
